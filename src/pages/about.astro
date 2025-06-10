@@ -1,6 +1,8 @@
 ---
 import Welcome from "../components/Welcome.astro";
 import AboutLayout from "../layouts/About.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "About Me";
@@ -25,7 +27,7 @@ const textCase = "uppercase";
 ---
 
 <AboutLayout>
-    
+  <Navigation />
   <h1>{pageTitle}</h1>
   <p>Here are a few facts about me:</p>
   <ul>
@@ -66,5 +68,6 @@ const textCase = "uppercase";
     text-transform: var(--textCase);
   }
 </style>
+    <Footer />
 </AboutLayout>
 
